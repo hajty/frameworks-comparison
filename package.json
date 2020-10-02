@@ -10,6 +10,10 @@
   "author": "Bartosz Miłosierny",
   "license": "ISC",
   "dependencies": {
+    "@hapi/hapi": "^20.0.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "koa": "^2.13.0"
   }
 }
