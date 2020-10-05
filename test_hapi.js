@@ -1,6 +1,16 @@
 'use strict';
 
 const Hapi = require('@hapi/hapi');
+const perfy = require('perfy');
+const dataController = require('./functions/data_controller.js');
+
+let data, counter = 0;
+
+(async () => {
+    data = await dataController.load(10000);
+    await server.start();
+    console.log('Hapi listens on 4000...')
+})();
 
 const server = Hapi.server({
     port: 4000,
@@ -9,10 +19,13 @@ const server = Hapi.server({
 
 server.route({
     method: 'GET',
-    path: '/',
+    path: '/api/posts',
     handler: (request, h) => {
-        return 'Hello World!';
+        perfy.start('get-time');
+        return data;
     }
 })
 
-server.start().then(console.log('Listening on 4000'));
+server.events.on('response', () => {
+    console.log(`${++counter} GET response time: ${perfy.end('get-time').fullMilliseconds} milliseconds.`)
+});
