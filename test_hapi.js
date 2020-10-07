@@ -27,5 +27,5 @@ server.route({
 })
 
 server.events.on('response', () => {
-    console.log(`${++counter} GET response time: ${perfy.end('get-time').fullMilliseconds} milliseconds.`)
+    console.log(`${++counter} GET response time: ${perfy.end('get-time').fullMilliseconds} milliseconds.`);
 });

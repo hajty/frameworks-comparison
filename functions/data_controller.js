@@ -24,6 +24,8 @@ exports.load = async (count) => {
         else throw Error(result.statusText);
     }
 
+    if (count < 100) data = data.slice(0, count);
+
     console.log(`Data of ${data.length} records got in ${perfy.end('data-get').time} seconds.`);
 
     return data;

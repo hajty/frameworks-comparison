@@ -10,7 +10,7 @@ const app = new Koa();
 let data, counter = 0;
 
 (async () => {
-    data = await dataController.load(10000);
+    data = await dataController.load(1);
     await app.listen(5000);
     console.log(`Koa listens on 5000...`);
 })();

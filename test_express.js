@@ -10,7 +10,7 @@ app.use(express.json());
 let data, counter = 0;
 
 (async () => {
-   data = await dataController.load(10000);
+   data = await dataController.load(1);
    await app.listen(3000);
    console.log('Express listens on 3000...')
 })();
