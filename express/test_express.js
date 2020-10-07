@@ -2,7 +2,7 @@
 
 const express = require('express');
 const perfy = require('perfy');
-const dataController = require('./functions/data_controller.js');
+const dataController = require('../functions/data_controller.js');
 
 const app = express();
 app.use(express.json());

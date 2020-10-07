@@ -2,7 +2,7 @@
 
 const Hapi = require('@hapi/hapi');
 const perfy = require('perfy');
-const dataController = require('./functions/data_controller.js');
+const dataController = require('../functions/data_controller.js');
 
 let data, counter = 0;
 

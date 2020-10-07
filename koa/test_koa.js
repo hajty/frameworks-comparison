@@ -3,7 +3,7 @@
 const Koa = require('koa');
 const route = require('koa-route');
 const perfy = require('perfy');
-const dataController = require('./functions/data_controller.js');
+const dataController = require('../functions/data_controller.js');
 
 const app = new Koa();
 
