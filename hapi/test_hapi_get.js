@@ -6,16 +6,16 @@ const dataController = require('../functions/data_controller.js');
 
 let data, counter = 0;
 
+const server = Hapi.server({
+    port: 4000,
+    host: 'localhost'
+});
+
 (async () => {
     data = await dataController.load(10000);
     await server.start();
     console.log('Hapi listens on 4000...')
 })();
-
-const server = Hapi.server({
-    port: 4000,
-    host: 'localhost'
-});
 
 server.route({
     method: 'GET',
