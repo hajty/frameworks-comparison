@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
     "perfy": "^1.1.5"
   }
 }
