@@ -20,16 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5e7a7c6-1293-4eb0-972f-3ab16bb678e6" name="Default Changelist" comment="name change">
-      <change afterPath="$PROJECT_DIR$/express/test_express_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/test_express_put.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hapi/test_hapi_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hapi/test_hapi_put.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/koa/test_koa_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/koa/test_koa_put.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/logger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express/hello_express.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/hello_express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express/test_express_delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/test_express_delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express/test_express_get.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/test_express_get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express/test_express_post.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/test_express_post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express/test_express_put.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/test_express_put.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hapi/hello_hapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/hello_hapi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hapi/test_hapi_delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/test_hapi_delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hapi/test_hapi_get.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/test_hapi_get.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hapi/test_hapi_post.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/test_hapi_post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hapi/test_hapi_put.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/test_hapi_put.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/hello_koa.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/hello_koa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/koa/test_koa.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa.post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/test_koa_delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa_delete.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/koa/test_koa_get.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa_get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/test_koa_put.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa_put.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +84,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -87,7 +94,7 @@
       <recent name="$PROJECT_DIR$/express" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.test_koa_delete.js">
+  <component name="RunManager" selected="Node.js.test_express_get">
     <configuration name="hello_express" type="NodeJSConfigurationType" path-to-js-file="express/hello_express.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -171,7 +178,8 @@
       <workItem from="1602080657903" duration="412000" />
       <workItem from="1602081901550" duration="718000" />
       <workItem from="1602177064841" duration="5785000" />
-      <workItem from="1602598924836" duration="4207000" />
+      <workItem from="1602598924836" duration="11566000" />
+      <workItem from="1602613560268" duration="3960000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1599153553370</created>
@@ -327,7 +335,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602182226174</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added put route to test">
+      <created>1602603161679</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603161679</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added delete route to test">
+      <created>1602603168732</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603168732</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fixes">
+      <created>1602603177593</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1602603177593</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,17 +404,21 @@
     <MESSAGE value="." />
     <MESSAGE value="added post tests" />
     <MESSAGE value="name change" />
-    <option name="LAST_COMMIT_MESSAGE" value="name change" />
+    <MESSAGE value="added put route to test" />
+    <MESSAGE value="added delete route to test" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="added logger function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logger function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="422" width="431" height="275" key="#Usage_Scope" timestamp="1601917221910">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="775" y="422" width="431" height="275" key="#Usage_Scope/72.27.1848.1053@72.27.1848.1053" timestamp="1601917221910" />
-    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602603131814">
+    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602610744870">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602603131814" />
+    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602610744870" />
     <state x="711" y="355" width="560" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602075417971">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -394,6 +427,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="339" width="952" height="441" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/72.27.1848.1053@72.27.1848.1053" timestamp="1601916711171" />
+    <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602603201327">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602603201327" />
     <state x="172" y="127" width="1648" height="853" key="DiffContextDialog" timestamp="1602177412420">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -402,22 +439,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="767" y="297" width="447" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1602080489988" />
-    <state width="1825" height="273" key="GridCell.Tab.0.bottom" timestamp="1602603008490">
+    <state width="1825" height="273" key="GridCell.Tab.0.bottom" timestamp="1602617519668">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008490" />
-    <state width="1825" height="273" key="GridCell.Tab.0.center" timestamp="1602603008489">
+    <state width="1825" height="273" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1602617519668" />
+    <state width="1825" height="273" key="GridCell.Tab.0.center" timestamp="1602617519668">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008489" />
-    <state width="1825" height="273" key="GridCell.Tab.0.left" timestamp="1602603008489">
+    <state width="1825" height="273" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1602617519668" />
+    <state width="1825" height="273" key="GridCell.Tab.0.left" timestamp="1602617519667">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008489" />
-    <state width="1825" height="273" key="GridCell.Tab.0.right" timestamp="1602603008490">
+    <state width="1825" height="273" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1602617519667" />
+    <state width="1825" height="273" key="GridCell.Tab.0.right" timestamp="1602617519668">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008490" />
+    <state width="1825" height="273" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1602617519668" />
     <state width="1825" height="340" key="GridCell.Tab.1.bottom" timestamp="1601666026524">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -470,10 +507,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="747" y="161" width="566" height="640" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1601923399257" />
-    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1601917379880">
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1602610722565">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1601917379880" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1602610722565" />
     <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601675652963">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

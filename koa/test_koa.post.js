@@ -4,11 +4,12 @@ const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
 const route = require('koa-route');
 const perfy = require('perfy');
+const logger = require('../functions/logger.js');
 
 const app = new Koa();
 app.use(bodyParser());
 
-let data = [], counter = 0;
+let data = [];
 
 (async () => {
     await app.listen(5000);
@@ -23,7 +24,12 @@ const posts = async (ctx) => {
 app.use(async (ctx, next) => {
     perfy.start('get-time');
     await next();
-    console.log(`${++counter} GET response time: ${perfy.end('get-time').fullMilliseconds} milliseconds.`);
+    const time = perfy.end('get-time').fullMilliseconds;
+    await times.push(time);
 });
 
 app.use(route.post('/api/posts', posts));
+
+process.on('SIGINT', async () => {
+    await logger('express', 'get', times);
+});

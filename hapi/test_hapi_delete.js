@@ -3,8 +3,9 @@
 const Hapi = require('@hapi/hapi');
 const perfy = require('perfy');
 const dataController = require('../functions/data_controller.js');
+const logger = require('../functions/logger.js');
 
-let data, counter = 0;
+let data, times = [];
 
 const server = Hapi.server({
     port: 4000,
@@ -30,6 +31,11 @@ server.route({
     }
 })
 
-server.events.on('response', () => {
-    console.log(`${++counter} GET response time: ${perfy.end('get-time').fullMilliseconds} milliseconds.`);
+server.events.on('response', async () => {
+    const time = perfy.end('get-time').fullMilliseconds;
+    await times.push(time);
+});
+
+process.on('SIGINT', async () => {
+    await logger('express', 'get', times);
 });
