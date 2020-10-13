@@ -17,7 +17,7 @@ let data = [], counter = 0;
 
 const posts = async (ctx) => {
     await data.push(ctx.request.body.post);
-    ctx.status = 201;
+    ctx.response.status = 201;
 };
 
 app.use(async (ctx, next) => {

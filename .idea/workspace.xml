@@ -19,16 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e7a7c6-1293-4eb0-972f-3ab16bb678e6" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/express/test_express_post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hapi/test_hapi_post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/koa/test_koa.post.js" afterDir="false" />
+    <list default="true" id="a5e7a7c6-1293-4eb0-972f-3ab16bb678e6" name="Default Changelist" comment="name change">
+      <change afterPath="$PROJECT_DIR$/express/test_express_delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express/test_express_put.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hapi/test_hapi_delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hapi/test_hapi_put.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/koa/test_koa_delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/koa/test_koa_put.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/express/test_express.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/test_express_get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hapi/test_hapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/test_hapi_get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/koa/test_koa.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa_get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hapi/test_hapi_post.js" beforeDir="false" afterPath="$PROJECT_DIR$/hapi/test_hapi_post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/test_koa.post.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa.post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/koa/test_koa_get.js" beforeDir="false" afterPath="$PROJECT_DIR$/koa/test_koa_get.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,10 +87,7 @@
       <recent name="$PROJECT_DIR$/express" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.test_koa.post.js">
-    <configuration name="data_controller.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions/data_controller.js" working-dir="$PROJECT_DIR$/functions">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.test_koa_delete.js">
     <configuration name="hello_express" type="NodeJSConfigurationType" path-to-js-file="express/hello_express.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -99,42 +97,59 @@
     <configuration name="hello_koa" type="NodeJSConfigurationType" path-to-js-file="koa/hello_koa.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="test_express" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/express/test_express_get.js" working-dir="$PROJECT_DIR$">
+    <configuration name="test_express_delete.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_express_delete.js" working-dir="$PROJECT_DIR$/express">
       <method v="2" />
     </configuration>
-    <configuration name="test_express_post.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/express/test_express_post.js" working-dir="$PROJECT_DIR$/express">
+    <configuration name="test_express_get" type="NodeJSConfigurationType" path-to-js-file="express/test_express_get.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="test_hapi" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/hapi/test_hapi_get.js" working-dir="$PROJECT_DIR$">
+    <configuration name="test_express_post.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_express_post.js" working-dir="$PROJECT_DIR$/express">
       <method v="2" />
     </configuration>
-    <configuration name="test_hapi_post.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/hapi/test_hapi_post.js" working-dir="$PROJECT_DIR$/hapi">
+    <configuration name="test_express_put.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_express_put.js" working-dir="$PROJECT_DIR$/express">
       <method v="2" />
     </configuration>
-    <configuration name="test_koa" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/koa/test_koa_get.js" working-dir="$PROJECT_DIR$">
+    <configuration name="test_hapi_delete.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_hapi_delete.js" working-dir="$PROJECT_DIR$/hapi">
       <method v="2" />
     </configuration>
-    <configuration name="test_koa.post.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/koa/test_koa.post.js" working-dir="$PROJECT_DIR$/koa">
+    <configuration name="test_hapi_get" type="NodeJSConfigurationType" path-to-js-file="hapi/test_hapi_get.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_hapi_post.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_hapi_post.js" working-dir="$PROJECT_DIR$/hapi">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_hapi_put.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_hapi_put.js" working-dir="$PROJECT_DIR$/hapi">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_koa_delete.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_koa_delete.js" working-dir="$PROJECT_DIR$/koa">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_koa_get" type="NodeJSConfigurationType" path-to-js-file="koa/test_koa_get.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_koa.post.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/koa/test_koa.post.js" working-dir="$PROJECT_DIR$/koa">
+      <method v="2" />
+    </configuration>
+    <configuration name="test_koa_put.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="test_koa_put.js" working-dir="$PROJECT_DIR$/koa">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.test_express_post.js" />
-      <item itemvalue="Node.js.test_hapi_post.js" />
       <item itemvalue="Node.js.hello_express" />
+      <item itemvalue="Node.js.test_express_get" />
+      <item itemvalue="Node.js.test_express_post.js" />
+      <item itemvalue="Node.js.test_express_put.js" />
+      <item itemvalue="Node.js.test_express_delete.js" />
       <item itemvalue="Node.js.hello_hapi" />
+      <item itemvalue="Node.js.test_hapi_get" />
+      <item itemvalue="Node.js.test_hapi_post.js" />
+      <item itemvalue="Node.js.test_hapi_put.js" />
+      <item itemvalue="Node.js.test_hapi_delete.js" />
       <item itemvalue="Node.js.hello_koa" />
-      <item itemvalue="Node.js.test_hapi" />
-      <item itemvalue="Node.js.test_koa" />
-      <item itemvalue="Node.js.test_express" />
-      <item itemvalue="Node.js.data_controller.js" />
+      <item itemvalue="Node.js.test_koa_get" />
       <item itemvalue="Node.js.test_koa.post.js" />
+      <item itemvalue="Node.js.test_koa_put.js" />
+      <item itemvalue="Node.js.test_koa_delete.js" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.test_koa.post.js" />
-        <item itemvalue="Node.js.data_controller.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -155,7 +170,8 @@
       <workItem from="1602075340507" duration="3043000" />
       <workItem from="1602080657903" duration="412000" />
       <workItem from="1602081901550" duration="718000" />
-      <workItem from="1602177064841" duration="4997000" />
+      <workItem from="1602177064841" duration="5785000" />
+      <workItem from="1602598924836" duration="4207000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1599153553370</created>
@@ -283,11 +299,49 @@
       <option name="project" value="LOCAL" />
       <updated>1602177124201</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added koa-bodyparser">
+      <created>1602182142373</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602182142373</updated>
+    </task>
+    <task id="LOCAL-00020" summary=".">
+      <created>1602182146105</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602182146105</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added post tests">
+      <created>1602182220500</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1602182220500</updated>
+    </task>
+    <task id="LOCAL-00022" summary="name change">
+      <created>1602182226174</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602182226174</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -317,18 +371,21 @@
     <MESSAGE value="hello world to tests" />
     <MESSAGE value="name and directory change" />
     <MESSAGE value="deleted perfy from hello world" />
+    <MESSAGE value="added koa-bodyparser" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="added post tests" />
+    <MESSAGE value="name change" />
+    <option name="LAST_COMMIT_MESSAGE" value="name change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="422" width="431" height="275" key="#Usage_Scope" timestamp="1601917221910">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="775" y="422" width="431" height="275" key="#Usage_Scope/72.27.1848.1053@72.27.1848.1053" timestamp="1601917221910" />
-    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602178539451">
+    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602603131814">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602178539451" />
+    <state x="454" y="211" width="1084" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1602603131814" />
     <state x="711" y="355" width="560" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602075417971">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -345,22 +402,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="767" y="297" width="447" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1602080489988" />
-    <state width="1825" height="273" key="GridCell.Tab.0.bottom" timestamp="1602182062174">
+    <state width="1825" height="273" key="GridCell.Tab.0.bottom" timestamp="1602603008490">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1602182062174" />
-    <state width="1825" height="273" key="GridCell.Tab.0.center" timestamp="1602182062173">
+    <state width="1825" height="273" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008490" />
+    <state width="1825" height="273" key="GridCell.Tab.0.center" timestamp="1602603008489">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1602182062173" />
-    <state width="1825" height="273" key="GridCell.Tab.0.left" timestamp="1602182062173">
+    <state width="1825" height="273" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008489" />
+    <state width="1825" height="273" key="GridCell.Tab.0.left" timestamp="1602603008489">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1602182062173" />
-    <state width="1825" height="273" key="GridCell.Tab.0.right" timestamp="1602182062173">
+    <state width="1825" height="273" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008489" />
+    <state width="1825" height="273" key="GridCell.Tab.0.right" timestamp="1602603008490">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="273" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1602182062173" />
+    <state width="1825" height="273" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1602603008490" />
     <state width="1825" height="340" key="GridCell.Tab.1.bottom" timestamp="1601666026524">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

@@ -17,6 +17,7 @@ let data, counter = 0;
 
 const posts = (ctx) => {
     ctx.body = data;
+    ctx.response.status = 200;
 };
 
 app.use(async (ctx, next) => {

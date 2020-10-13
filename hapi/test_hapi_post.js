@@ -20,7 +20,7 @@ server.route({
     path: '/api/posts',
     handler: async (request, h) => {
         perfy.start('get-time');
-        await data.push(request.post);
+        await data.push(request.payload.post);
         const response = h.response();
         response.statusCode = 201;
         return response;
