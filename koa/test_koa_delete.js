@@ -1,12 +1,13 @@
 'use strict';
 
 const Koa = require('koa');
-const route = require('koa-route');
+const Router = require('@koa/router');
 const perfy = require('perfy');
 const dataController = require('../functions/data_controller.js');
 const logger = require('../functions/logger.js');
 
 const app = new Koa();
+const router = new Router();
 
 let data, times = [];
 
@@ -16,19 +17,24 @@ let data, times = [];
     console.log(`Koa listens on 5000...`);
 })();
 
-const posts = async (ctx, id) => {
-    await data.splice(id - 1, 1);
-    ctx.response.status = 204;
-};
-
 app.use(async (ctx, next) => {
     perfy.start('get-time');
     await next();
-    const time = perfy.end('get-time').fullMilliseconds;
-    await times.push(time);
+    ctx.res.on('finish', async () => {
+        const time = perfy.end('get-time').fullMilliseconds;
+        await times.push(time);
+    });
 });
 
-app.use(route.delete('/api/posts/:id', posts));
+router.delete('/api/posts/:id', async (ctx) => {
+    const id = ctx.params.id;
+    await data.splice(id - 1, 1);
+    ctx.response.status = 204;
+});
+
+app
+    .use(router.routes())
+    .use(router.allowedMethods());
 
 process.on('SIGINT', async () => {
     await logger('koa', 'delete', times);

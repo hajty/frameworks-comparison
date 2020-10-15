@@ -1,26 +1,32 @@
 'use strict';
 
 const Koa = require('koa');
-const route = require('koa-route');
+const Router = require('@koa/router');
 const perfy = require('perfy');
 const logger = require('../functions/logger.js');
 
 const app = new Koa();
+const router = new Router();
 
 let times = [];
-
-const helloString = (ctx) => {
-    ctx.body = 'Hello World!';
-};
 
 app.use(async (ctx, next) => {
     perfy.start('get-time');
     await next();
-    const time = perfy.end('get-time').fullMilliseconds;
-    await times.push(time);
+    ctx.res.on('finish', async () => {
+        const time = perfy.end('get-time').fullMilliseconds;
+        await times.push(time);
+    });
 });
 
-app.use(route.get('/api/hello', helloString));
+router.get('/api/hello', async (ctx) => {
+    ctx.body = 'Hello World!';
+    ctx.response.status = 200;
+});
+
+app
+    .use(router.routes())
+    .use(router.allowedMethods());
 
 app.listen(5000, () => console.log(`Koa listens on 5000...`));
 
