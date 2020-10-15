@@ -25,4 +25,5 @@ app.get('/api/posts', async (req, res) => {
 
 process.on('SIGINT', async () => {
     await logger('express', 'get', times);
+    process.exit(1);
 });

@@ -34,5 +34,6 @@ server.events.on('response', async() => {
 });
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('hapi', 'post', times);
+    process.exit(1);
 });

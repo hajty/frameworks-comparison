@@ -33,5 +33,6 @@ app.use(async (ctx, next) => {
 app.use(route.put('/api/posts/:id', posts));
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('koa', 'put', times);
+    process.exit(1);
 });

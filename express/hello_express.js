@@ -17,5 +17,6 @@ app.get('/api/hello', async (req, res) => {
 app.listen(3000, () => console.log('Express listens on 3000...'));
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('express_hello', 'get', times);
+    process.exit(1);
 });

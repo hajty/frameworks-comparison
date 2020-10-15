@@ -26,5 +26,6 @@ app.put('/api/posts/:id', async (req, res) => {
 });
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('express', 'put', times);
+    process.exit(1);
 });

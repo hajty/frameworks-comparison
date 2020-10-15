@@ -25,5 +25,6 @@ app.use(route.get('/api/hello', helloString));
 app.listen(5000, () => console.log(`Koa listens on 5000...`));
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('koa_hello', 'get', times);
+    process.exit(1);
 });

@@ -31,5 +31,6 @@ app.use(async (ctx, next) => {
 app.use(route.delete('/api/posts/:id', posts));
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('koa', 'delete', times);
+    process.exit(1);
 });

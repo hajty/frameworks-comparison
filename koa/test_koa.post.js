@@ -9,7 +9,7 @@ const logger = require('../functions/logger.js');
 const app = new Koa();
 app.use(bodyParser());
 
-let data = [];
+let data = [], times = [];
 
 (async () => {
     await app.listen(5000);
@@ -31,5 +31,6 @@ app.use(async (ctx, next) => {
 app.use(route.post('/api/posts', posts));
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('koa', 'post', times);
+    process.exit(1);
 });

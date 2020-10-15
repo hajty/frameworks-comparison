@@ -13,7 +13,7 @@ const server = Hapi.server({
 });
 
 (async () => {
-    data = await dataController.load(10000);
+    data = await dataController.load(1);
     await server.start();
     console.log('Hapi listens on 4000...')
 })();
@@ -33,5 +33,6 @@ server.events.on('response', async () => {
 });
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('hapi', 'get', times);
+    process.exit(1);
 });

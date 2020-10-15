@@ -28,5 +28,6 @@ server.events.on('response', async () => {
 server.start().then(() => console.log('Hapi listens on 4000...'));
 
 process.on('SIGINT', async () => {
-    await logger('express', 'get', times);
+    await logger('hapi_hello', 'get', times);
+    process.exit(1);
 });
