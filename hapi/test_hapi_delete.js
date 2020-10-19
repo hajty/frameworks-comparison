@@ -2,8 +2,8 @@
 
 const Hapi = require('@hapi/hapi');
 const perfy = require('perfy');
-const dataController = require('../functions/data_controller.js');
-const logger = require('../functions/logger.js');
+const dataController = require('../_functions/data_controller.js');
+const logger = require('../_functions/logger.js');
 
 let data, times = [];
 

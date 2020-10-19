@@ -2,7 +2,7 @@
 
 const Hapi = require('@hapi/hapi');
 const perfy = require('perfy');
-const logger = require('../functions/logger.js');
+const logger = require('../_functions/logger.js');
 
 let times = [];
 

@@ -4,8 +4,8 @@ const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
 const Router = require('@koa/router');
 const perfy = require('perfy');
-const dataController = require('../functions/data_controller.js');
-const logger = require('../functions/logger.js');
+const dataController = require('../_functions/data_controller.js');
+const logger = require('../_functions/logger.js');
 
 const app = new Koa();
 const router = new Router();
